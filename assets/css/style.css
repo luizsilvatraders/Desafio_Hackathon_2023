@@ -164,3 +164,25 @@ footer .logodireitosreservados img {
   padding: 10px;
   color: #c27fb1 ;
 }
+
+.botaoflutuante {
+  position: fixed;
+  left: 93%;
+  top: 40%;
+  font-weight: bold;
+  font-size: 1em;
+  background-color:#c27fb1;
+  color: #555;
+  border-radius: 5em;
+  border: none;
+  padding: 1em 1em 1em 1em;
+  cursor: pointer;
+}
+
+.botaoflutuante:hover {
+  transform: translate(0px, -2px);
+  -webkit-box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
+  transition: all 0.3s ease-out;
+}
