@@ -1,3 +1,4 @@
+/*degrade */
 .navbar {
     background: linear-gradient(to bottom, #1A7FBE, #5B7FB9);
 }
@@ -6,6 +7,7 @@ footer>* {
     background: linear-gradient(to bottom, #1A7FBE, #5B7FB9);
 }
 
+/*titulo dos link*/
 .col-lg-4.col-md-6.mb-4.mb-md-0 h5.text-uppercase {
     color: #c27fb1;
 }
@@ -21,10 +23,12 @@ ul.list-unstyled a.text-dark:hover {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.281);
 }
 
+/*cor no copyrite*/
 .footer-text {
     color: #c27fb1;
 }
 
+/*shadon e cor para sobresair o card*/
 .card-custom {
     border: 1px solid #1A7FBE;
     box-shadow: 0 0 5px rgba(26, 127, 190, 0.5);
@@ -36,4 +40,20 @@ ul.list-unstyled a.text-dark:hover {
     width: 100px;
     height: 100px;
     object-fit: cover;
+}
+
+/*botão padrão class="btn btn-custom btn-sm*/
+.btn-custom {
+    background: linear-gradient(to bottom, #1A7FBE, #5B7FB9);
+    border-color: #5B7FB9;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.btn-custom:hover {
+    background: #5B7FB9;
+    border-color: #5B7FB9;
+    color: #fff;
 }
