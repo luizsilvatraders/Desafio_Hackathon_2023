@@ -24,3 +24,16 @@ ul.list-unstyled a.text-dark:hover {
 .footer-text {
     color: #c27fb1;
 }
+
+.card-custom {
+    border: 1px solid #1A7FBE;
+    box-shadow: 0 0 5px rgba(26, 127, 190, 0.5);
+}
+
+.card-custom .card-img-top {
+    border: 3px solid #1A7FBE;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
