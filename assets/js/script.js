@@ -1,21 +1,33 @@
-/* ------- PreLoader ------- */
-$(window).on('load', function () {
-  $('#preloader .inner').fadeOut();
-  $('#preloader').delay(150).fadeOut('slow');
-  $('body').delay(150).css({ 'overflow': 'visible' });
-})
-
-/* ------- Banner & Popup ------- */
-var popup = document.querySelector('.popup');
-var close = document.querySelector('.close');
-// Mostrar automaticamente a popup após 2 segundos da página carregada
-window.onload = function () {
-  setTimeout(function () {
-      popup.style.display = "block";
-      const img = "ifes-horizontal-branco ifes-horizontal-cor ifes-horizontal-pb ifes-horizontal-preto ifes-vertical-branco".split(" ");
-      document.querySelector("#banners").src = `./img/logo-ifes/${img[Math.floor(Math.random() * img.length)]}`
-  }, 2000);
+// Funções para aumentar e diminuir o tamanho da fonte
+function increaseFontSize() {
+    const elements = document.getElementsByTagName("*");
+    for (let i = 0; i < elements.length; i++) {
+        const element = elements[i];
+        let fontSize = window.getComputedStyle(element, null).getPropertyValue("font-size");
+        fontSize = parseInt(fontSize) + 1 + "px";
+        element.style.fontSize = fontSize;
+    }
 }
-close.addEventListener('click', () => {
-  popup.style.display = "none";
-})
+
+function decreaseFontSize() {
+    const elements = document.getElementsByTagName("*");
+    for (let i = 0; i < elements.length; i++) {
+        const element = elements[i];
+        let fontSize = window.getComputedStyle(element, null).getPropertyValue("font-size");
+        fontSize = parseInt(fontSize) - 1 + "px";
+        element.style.fontSize = fontSize;
+    }
+}
+
+// Função para ativar/desativar o modo de alto contraste
+function toggleHighContrast() {
+    const body = document.getElementsByTagName("body")[0];
+    const navbar = document.getElementsByClassName("navbar")[0];
+    body.classList.toggle("high-contrast-on");
+    navbar.classList.toggle("high-contrast-on");
+}
+
+// Eventos de clique nos botões de acessibilidade
+document.querySelector(".font-size-plus").addEventListener("click", increaseFontSize);
+document.querySelector(".font-size-minus").addEventListener("click", decreaseFontSize);
+document.querySelector(".high-contrast").addEventListener("click", toggleHighContrast);

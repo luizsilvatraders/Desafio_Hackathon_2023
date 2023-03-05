@@ -57,3 +57,39 @@ ul.list-unstyled a.text-dark:hover {
     border-color: #5B7FB9;
     color: #fff;
 }
+
+/* Estilos para o modo de alto contraste */
+.high-contrast-on h1,
+.high-contrast-on h2,
+.high-contrast-on h3,
+.high-contrast-on h4,
+.high-contrast-on h5,
+.high-contrast-on h6,
+.high-contrast-on p {
+    color: #fff !important;
+    background-color: #000 !important;
+}
+
+.high-contrast-on a {
+    color: #ff0 !important;
+}
+
+#font-size-plus-link,
+#font-size-minus-link,
+#high-contrast-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    color: #fff;
+    background-color: #c27fb1;
+    border-color: #c27fb1;
+    transition: all 0.3s ease-in-out;
+}
+
+#font-size-plus-link:hover,
+#font-size-minus-link:hover,
+#high-contrast-link:hover {
+    background-color: #a4548b;
+    border-color: #a4548b;
+    cursor: pointer;
+}
