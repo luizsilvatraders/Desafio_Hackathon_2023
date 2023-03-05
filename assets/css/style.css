@@ -23,6 +23,18 @@ ul.list-unstyled a.text-dark:hover {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.281);
 }
 
+/*estilização da home reprograme-se*/
+.bg-image-home {
+    background-image: url('/assets/img/img-baner/home-reprograme-se.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /*cor no copyrite*/
 .footer-text {
     color: #c27fb1;
@@ -92,4 +104,11 @@ ul.list-unstyled a.text-dark:hover {
     background-color: #a4548b;
     border-color: #a4548b;
     cursor: pointer;
+}
+
+/*card notificação*/
+
+.card-notif {
+    border: 1px solid #1A7FBE;
+    box-shadow: 0 0 5px rgba(26, 127, 190, 0.5);
 }
